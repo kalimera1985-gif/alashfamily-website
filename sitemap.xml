@@ -5,39 +5,18 @@
   <!-- Главная страница -->
   <url>
     <loc>https://alashfamily.kz/</loc>
-    <lastmod>2026-05-05</lastmod>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ru-KZ" href="https://alashfamily.kz/"/>
   </url>
 
-  <!-- Каталог (якоря на главной) -->
+  <!-- Блог: статья про манты и самсу -->
   <url>
-    <loc>https://alashfamily.kz/#catalog</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://alashfamily.kz/#delivery</loc>
-    <lastmod>2026-05-05</lastmod>
+    <loc>https://alashfamily.kz/blog/manty-samsa-dostavka-astana.html</loc>
+    <lastmod>2026-05-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alashfamily.kz/#b2b</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://alashfamily.kz/#faq</loc>
-    <lastmod>2026-05-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
