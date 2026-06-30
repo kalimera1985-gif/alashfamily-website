@@ -72,6 +72,58 @@
   .foot .phone{font-size:24px;font-weight:800;color:var(--green);letter-spacing:1px;margin-top:4px}
   .disclaimer{margin-top:18px;text-align:center;font-size:11px;color:var(--ink-soft)}
 </style>
+<!-- Schema.org LocalBusiness + Product -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://alashfamily.kz/#organization",
+      "name": "Alash Family",
+      "alternateName": "SARAYLI",
+      "description": "Производство и доставка замороженных полуфабрикатов ручной лепки в Астане. Пельмени, манты, самса, вареники.",
+      "url": "https://alashfamily.kz",
+      "telephone": "+7 700 589 6701",
+      "email": "r.tabarikov@outlook.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ул. Едиль, 25",
+        "addressLocality": "Астана",
+        "addressCountry": "KZ"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Астана"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Комбо-наборы полуфабрикатов"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Комбо-набор Семейная неделя",
+      "description": "Большой комбо-набор пельменей, мантов и самсы ручной лепки для семьи. Халяль, натуральные ингредиенты.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Alash Family / SARAYLI"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://alashfamily.kz",
+        "priceCurrency": "KZT",
+        "price": "15000",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Alash Family"
+        }
+      }
+    }
+  ]
+}
+</script>  
 </head>
 <body>
 <div class="wrap">
