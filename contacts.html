@@ -4,36 +4,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контакты | Alash Family — доставка полуфабрикатов в Астане</title>
-    <meta name="description" content="Контакты Alash Family. Заказ полуфабрикатов и комбо-наборов в Астане: +7 700 589 6701, WhatsApp, доставка.">
+    <meta name="description" content="Контакты Alash Family. Заказ комбо-наборов и полуфабрикатов в Астане: +7 700 589 6701, WhatsApp, доставка.">
+    
+    <style>
+        :root {
+            --green: #13453C;
+            --green-d: #0E332C;
+            --green-1: #1C6356;
+            --red: #C0392B;
+            --red-d: #9E2A1E;
+            --cream: #F6F1E6;
+            --cream2: #EDE4D2;
+            --ink: #243029;
+            --ink-soft: #5C6B62;
+            --line: #DCD2BD;
+            --gold: #C8A34A;
+            --shadow: 0 10px 30px rgba(19, 69, 60, .14);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--cream);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: var(--green-d);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--green);
+            margin: 35px 0 15px;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 18px;
+            font-size: 17px;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item a {
+            color: var(--ink);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--green-1);
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        .retail-list {
+            list-style: none;
+        }
+
+        .retail-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .retail-list li:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            background-color: #f8f5f0;
+            padding: 30px 20px;
+            margin-top: 60px;
+            border-top: 1px solid var(--line);
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Контакты</h1>
+    <div class="container">
 
-<p>Мы производим и доставляем замороженные полуфабрикаты ручной лепки по Астане и области.</p>
+        <h1>Контакты</h1>
+        <p style="font-size: 18px; color: var(--ink-soft); max-width: 600px;">
+            Мы производим и доставляем замороженные полуфабрикаты ручной лепки по Астане.
+        </p>
 
-<h2>Связаться с нами</h2>
+        <!-- Основные контакты -->
+        <div class="contact-card">
+            <h2>Связаться с нами</h2>
 
-<ul>
-    <li><strong>Телефон / WhatsApp:</strong> <a href="tel:+77005896701">+7 700 589 6701</a></li>
-    <li><strong>Email:</strong> <a href="mailto:r.tabarikov@outlook.com">r.tabarikov@outlook.com</a></li>
-</ul>
+            <div class="contact-item">
+                <strong>Телефон / WhatsApp:</strong>
+                <a href="tel:+77005896701">+7 700 589 6701</a>
+            </div>
 
-<h2>Доставка</h2>
-<p>Доставляем по Астане. Бесплатная доставка при заказе от 15 000 ₸.</p>
-<p>Минимальный заказ — 15 000 ₸.</p>
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:r.tabarikov@outlook.com">r.tabarikov@outlook.com</a>
+            </div>
 
-<h2>Где купить</h2>
-<p>Наши продукты также представлены в магазинах:</p>
-<ul>
-    <li>My Mart</li>
-    <li>Вкусмарт</li>
-    <li>Моя ЭКОферма</li>
-</ul>
+            <a href="https://wa.me/77005896701" target="_blank" class="whatsapp-btn">
+                Написать в WhatsApp
+            </a>
+        </div>
 
-<h2>Реквизиты</h2>
-<p>ТОО «ALASH FAMILY»<br>
-БИН: 150140010119</p>
+        <!-- Доставка -->
+        <div class="contact-card">
+            <h2>Доставка по Астане</h2>
+            <p><strong>Бесплатная доставка</strong> при заказе от 15 000 ₸</p>
+            <p>Минимальный заказ — 15 000 ₸</p>
+        </div>
+
+        <!-- Где купить -->
+        <div class="contact-card">
+            <h2>Где купить наши продукты</h2>
+            <ul class="retail-list">
+                <li>My Mart</li>
+                <li>Вкусмарт</li>
+                <li>Моя ЭКОферма</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div style="max-width: 900px; margin: 0 auto;">
+            <p><strong>Alash Family</strong> — ручная лепка, халяль, натурально как дома</p>
+            <p style="margin-top: 10px;">
+                <a href="contacts.html" style="color: var(--ink); text-decoration: none;">Контакты</a>
+            </p>
+            <p style="margin-top: 15px; color: #888; font-size: 13px;">
+                © 2026 Alash Family. Все права защищены.
+            </p>
+        </div>
+    </footer>
 
 </body>
 </html>
