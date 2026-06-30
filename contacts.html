@@ -38,7 +38,22 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 30px 20px;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #243029;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .back-link:hover {
+            color: var(--green-1);
         }
 
         h1 {
@@ -50,7 +65,7 @@
         h2 {
             font-size: 22px;
             color: var(--green);
-            margin: 35px 0 15px;
+            margin: 30px 0 15px;
         }
 
         .contact-card {
@@ -58,14 +73,14 @@
             border-radius: 16px;
             padding: 30px;
             box-shadow: var(--shadow);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 18px;
+            gap: 12px;
+            margin-bottom: 16px;
             font-size: 17px;
         }
 
@@ -90,7 +105,7 @@
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            margin-top: 10px;
+            margin-top: 15px;
             transition: all 0.3s ease;
         }
 
@@ -114,8 +129,8 @@
 
         footer {
             background-color: #f8f5f0;
-            padding: 30px 20px;
-            margin-top: 60px;
+            padding: 35px 20px;
+            margin-top: 50px;
             border-top: 1px solid var(--line);
             text-align: center;
             font-size: 14px;
@@ -124,24 +139,29 @@
 </head>
 <body>
 
+    <!-- Кнопка назад на главную -->
+    <div style="max-width: 900px; margin: 0 auto; padding: 25px 20px 0;">
+        <a href="index.html" class="back-link">← На главную</a>
+    </div>
+
     <div class="container">
 
         <h1>Контакты</h1>
-        <p style="font-size: 18px; color: var(--ink-soft); max-width: 600px;">
+        <p style="font-size: 18px; color: var(--ink-soft); max-width: 620px;">
             Мы производим и доставляем замороженные полуфабрикаты ручной лепки по Астане.
         </p>
 
-        <!-- Основные контакты -->
+        <!-- Связь -->
         <div class="contact-card">
             <h2>Связаться с нами</h2>
 
             <div class="contact-item">
-                <strong>Телефон / WhatsApp:</strong>
+                <strong>Телефон / WhatsApp:</strong> 
                 <a href="tel:+77005896701">+7 700 589 6701</a>
             </div>
 
             <div class="contact-item">
-                <strong>Email:</strong>
+                <strong>Email:</strong> 
                 <a href="mailto:r.tabarikov@outlook.com">r.tabarikov@outlook.com</a>
             </div>
 
@@ -173,7 +193,7 @@
     <footer>
         <div style="max-width: 900px; margin: 0 auto;">
             <p><strong>Alash Family</strong> — ручная лепка, халяль, натурально как дома</p>
-            <p style="margin-top: 10px;">
+            <p style="margin-top: 8px;">
                 <a href="contacts.html" style="color: var(--ink); text-decoration: none;">Контакты</a>
             </p>
             <p style="margin-top: 15px; color: #888; font-size: 13px;">
