@@ -12,8 +12,8 @@
   var CONFIG = {
     ADS_ID: 'AW-1021068699',                              // Google Ads (уже работает)
     ADS_CONVERSION: 'AW-1021068699/pbj9CMjPzdAcEJuL8eYD', // конверсия «клик WhatsApp / телефон»
-    GA4_ID: '',                                           // ← впишите 'G-...'
-    YM_ID: ''                                             // ← впишите номер счётчика Метрики
+    GA4_ID: 'G-XWTZM5MVG6',                               // Google Analytics 4
+    YM_ID: '112938875'                                    // Яндекс Метрика alashfamily.kz
   };
 
   var WA_PHONE = '77786510556';
