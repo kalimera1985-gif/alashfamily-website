@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Комбо-наборы пельмени, манты, самса с доставкой в Астане | Alash Family SARAYLI</title>
-<meta name="description" content="Ручная лепка, халяль, отборное сырьё. Комбо-наборы пельменей, мантов и самсы со скидкой до 10%. Бесплатная доставка по Астане от 15 000 ₸. Заказать в WhatsApp: +7 778 651 0556">
+<title>Пельмени, манты, самса — комбо-наборы с доставкой в Астане и Косшы | Alash Family SARAYLI</title>
+<meta name="description" content="Ручная лепка, халяль, отборное сырьё. Комбо-наборы пельменей, мантов и самсы со скидкой до 10%. Бесплатная доставка по Астане и в Косшы от 15 000 ₸. Заказать в WhatsApp: +7 778 651 0556">
 
 <!-- ===== SEO / AEO additions (2026-07, существующий код не изменён) ===== -->
 <link rel="canonical" href="https://alashfamily.kz/">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-<meta name="keywords" content="пельмени Астана, манты Астана, самса Астана, полуфабрикаты Астана, доставка пельменей Астана, пельмени ручной лепки, халяль полуфабрикаты, манты с кониной, вареники, комбо-набор полуфабрикатов, Alash Family, SARAYLI">
+<meta name="keywords" content="пельмени Астана, манты Астана, самса Астана, полуфабрикаты Астана, доставка пельменей Астана, пельмени ручной лепки, халяль полуфабрикаты, манты с кониной, вареники, комбо-набор полуфабрикатов, пельмени Косшы, манты Косшы, доставка Косшы, полуфабрикаты оптом Астана, Alash Family, SARAYLI">
 <meta name="author" content="Alash Family">
 <meta name="geo.region" content="KZ-71">
 <meta name="geo.placename" content="Астана">
@@ -19,8 +19,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://alashfamily.kz/">
 <meta property="og:site_name" content="Alash Family SARAYLI">
-<meta property="og:title" content="Комбо-наборы пельмени, манты, самса с доставкой в Астане | Alash Family">
-<meta property="og:description" content="Ручная лепка, халяль, отборное сырьё. Комбо-наборы со скидкой до 10%. Бесплатная доставка по Астане от 15 000 ₸.">
+<meta property="og:title" content="Пельмени, манты, самса с доставкой в Астане и Косшы | Alash Family">
+<meta property="og:description" content="Ручная лепка, халяль, отборное сырьё. Комбо-наборы со скидкой до 10%. Бесплатная доставка по Астане и в Косшы от 15 000 ₸.">
 <meta property="og:image" content="https://alashfamily.kz/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -99,6 +99,9 @@
   .partners b{color:var(--green)}
   .foot{text-align:center;margin-top:30px;color:var(--ink-soft);font-size:14px}
   .foot .phone{font-size:24px;font-weight:800;color:var(--green);letter-spacing:1px;margin-top:4px}
+  .quick-links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin:16px 0 0}
+  .quick-links a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;text-decoration:none;font-weight:700;font-size:14px;color:var(--green)}
+  .quick-links a:hover{border-color:var(--green-l)}
   .disclaimer{margin-top:18px;text-align:center;font-size:11px;color:var(--ink-soft)}
 </style>
 <!-- Schema.org LocalBusiness + Product -->
@@ -111,7 +114,7 @@
       "@id": "https://alashfamily.kz/#organization",
       "name": "Alash Family",
       "alternateName": "SARAYLI",
-      "description": "Производство и доставка замороженных полуфабрикатов ручной лепки в Астане. Пельмени, манты, самса, вареники.",
+      "description": "Производство и доставка замороженных полуфабрикатов ручной лепки в Астане и Косшы. Пельмени, манты, самса, вареники. Халяль. SARAYLI — торговая марка продукции Alash Family.",
       "url": "https://alashfamily.kz",
       "telephone": "+7 778 651 0556",
       "email": "r.tabarikov@outlook.com",
@@ -121,10 +124,13 @@
         "addressLocality": "Астана",
         "addressCountry": "KZ"
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Астана"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Астана" },
+        { "@type": "City", "name": "Косшы" }
+      ],
+      "openingHours": "Mo-Su 08:00-18:00",
+      "priceRange": "₸₸",
+      "paymentAccepted": "Наличные, перевод на карту, Kaspi Pay",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Комбо-наборы полуфабрикатов"
@@ -193,6 +199,8 @@
         { "@type": "Question", "name": "Как оплатить заказ?", "acceptedAnswer": { "@type": "Answer", "text": "Наличными при получении, переводом на карту или через Kaspi Red / Kaspi Pay (по договорённости). Реквизиты пришлём в WhatsApp." } },
         { "@type": "Question", "name": "Можно ли изменить состав комбо-набора?", "acceptedAnswer": { "@type": "Answer", "text": "Да, состав и количество позиций в наборе можно скорректировать при заказе." } },
         { "@type": "Question", "name": "Где ещё купить продукцию Alash Family (SARAYLI)?", "acceptedAnswer": { "@type": "Answer", "text": "Наша продукция уже на полках магазинов My Mart, Вкусмарт и Моя ЭКОферма в Астане." } },
+        { "@type": "Question", "name": "Доставляете ли вы в Косшы?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Минимальный заказ 15 000 ₸, доставка бесплатная, с понедельника по пятницу. В выходные — по предварительной договорённости." } },
+        { "@type": "Question", "name": "Можно ли купить полуфабрикаты оптом?", "acceptedAnswer": { "@type": "Answer", "text": "Да. Для кафе, столовых и магазинов есть отдельный оптовый прайс, минимальная партия — от 15 000 ₸. Работаем по договору, безнал." } },
         { "@type": "Question", "name": "Как хранить полуфабрикаты?", "acceptedAnswer": { "@type": "Answer", "text": "Продукция доставляется в заморозке — храните её в морозильной камере. При необходимости упакуем заказ для длительного хранения." } }
       ]
     }
@@ -200,28 +208,8 @@
 }
 </script>
 <!-- ===== end Schema.org addition ===== -->
-<!-- Тег Google (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1021068699"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-1021068699');
-</script>
-
-<!-- Конверсия: клик по кнопке WhatsApp или по телефону -->
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var selector = 'a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href^="tel:"]';
-    document.querySelectorAll(selector).forEach(function (link) {
-      link.addEventListener('click', function () {
-        gtag('event', 'conversion', {
-          'send_to': 'AW-1021068699/pbj9CMjPzdAcEJuL8eYD'
-        });
-      });
-    });
-  });
-</script>
+<!-- Аналитика: Google Ads, GA4, Яндекс Метрика, цели WhatsApp/телефон/прайс — см. /assets/track.js -->
+<script src="/assets/track.js" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -248,6 +236,14 @@
     <b>Доставка в подарок при заказе от 15 000 ₸</b>
     <span>— любой комбо-набор уже проходит порог!</span>
   </div>
+
+  <nav class="quick-links" aria-label="Каталог">
+    <a href="/pelmeni.html">🥟 Пельмени</a>
+    <a href="/manty.html">🥟 Манты</a>
+    <a href="/samsa.html">🥐 Самса</a>
+    <a href="/kosshy.html">🚚 Доставка в Косшы</a>
+    <a href="/optom.html">📦 Оптом для бизнеса</a>
+  </nav>
 
   <div class="section-head">
     <div class="ico">👨‍👩‍👧‍👦</div>
@@ -505,6 +501,8 @@
   <details class="faq-item"><summary>Как оплатить заказ?</summary><p>Наличными при получении, переводом на карту или через Kaspi Red / Kaspi Pay (по договорённости). Реквизиты пришлём в WhatsApp.</p></details>
   <details class="faq-item"><summary>Можно ли изменить состав комбо-набора?</summary><p>Да, состав и количество позиций в наборе можно скорректировать при заказе.</p></details>
   <details class="faq-item"><summary>Где ещё купить продукцию Alash Family (SARAYLI)?</summary><p>Наша продукция уже на полках магазинов My Mart, Вкусмарт и Моя ЭКОферма в Астане.</p></details>
+  <details class="faq-item"><summary>Доставляете ли вы в Косшы?</summary><p>Да. Минимальный заказ 15 000 ₸, доставка бесплатная, с понедельника по пятницу. В выходные — по предварительной договорённости. <a href="/kosshy.html" style="color:var(--green,#13453C)">Подробнее о доставке в Косшы</a>.</p></details>
+  <details class="faq-item"><summary>Можно ли купить полуфабрикаты оптом?</summary><p>Да. Для кафе, столовых и магазинов есть отдельный оптовый прайс, минимальная партия — от 15 000 ₸. Работаем по договору, безнал. <a href="/optom.html" style="color:var(--green,#13453C)">Условия для бизнеса</a>.</p></details>
   <details class="faq-item"><summary>Как хранить полуфабрикаты?</summary><p>Продукция доставляется в заморозке — храните её в морозильной камере. При необходимости упакуем заказ для длительного хранения.</p></details>
 </section>
 <!-- ===== end FAQ addition ===== -->
@@ -517,13 +515,19 @@
         <div style="margin-bottom: 20px;">
             <a href="contacts.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Контакты</a>
             <a href="delivery.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Доставка и оплата</a>
+            <a href="pelmeni.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Пельмени</a>
+            <a href="manty.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Манты</a>
+            <a href="samsa.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Самса</a>
+            <a href="optom.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Оптом</a>
+            <a href="kosshy.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Доставка в Косшы</a>
+            <a href="blog/manty-samsa-dostavka-astana.html" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">Блог</a>
             <a href="https://wa.me/77786510556" target="_blank" style="color: #243029; text-decoration: none; margin: 0 18px; font-weight: 500;">WhatsApp</a>
         </div>
 
         <!-- Информация -->
         <div style="color: #243029; margin-bottom: 12px;">
             <strong>Alash Family</strong><br>
-            Доставка замороженных полуфабрикатов по Астане
+            Доставка замороженных полуфабрикатов по Астане и в Косшы
         </div>
 
         <div style="color: #243029;">

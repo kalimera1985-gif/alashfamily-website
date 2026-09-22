@@ -1,0 +1,25 @@
+# Сообщает Bing, Яндексу и другим поисковикам (протокол IndexNow) обо всех страницах сайта
+# после каждого обновления ветки main. Ничего настраивать не нужно.
+name: IndexNow ping
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Подождать публикацию GitHub Pages
+        run: sleep 90
+      - name: Отправить список страниц в IndexNow
+        run: |
+          KEY="83692ac5809f464cb4131cca8754ef76"
+          URLS=$(grep -oP '(?<=<loc>)[^<]+' sitemap.xml | python3 -c 'import sys,json;print(json.dumps([l.strip() for l in sys.stdin if l.strip()]))')
+          BODY=$(printf '{"host":"alashfamily.kz","key":"%s","keyLocation":"https://alashfamily.kz/%s.txt","urlList":%s}' "$KEY" "$KEY" "$URLS")
+          for EP in https://api.indexnow.org/indexnow https://yandex.com/indexnow; do
+            echo "→ $EP"
+            curl -s -o /dev/null -w "%{http_code}\n" -X POST "$EP" -H "Content-Type: application/json; charset=utf-8" -d "$BODY" || true
+          done

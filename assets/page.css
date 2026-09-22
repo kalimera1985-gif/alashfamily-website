@@ -1,0 +1,67 @@
+/* Alash Family — общий стиль внутренних страниц (товары, Косшы, опт, блог) */
+:root{
+  --green:#13453C;--green-d:#0E332C;--green-l:#1C6356;
+  --red:#C0392B;--red-d:#9E2A1E;
+  --cream:#F6F1E6;--cream2:#EDE4D2;
+  --ink:#243029;--ink-soft:#5C6B62;--line:#DCD2BD;--gold:#C8A34A;
+  --shadow:0 10px 30px rgba(19,69,60,.14);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--green-l)}
+.topbar{background:var(--green-d);color:#fff}
+.topbar .in{max-width:1000px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar .brand{color:#fff;text-decoration:none;font-weight:800;letter-spacing:1px}
+.topbar .brand small{color:#EBD9A6;font-weight:600;letter-spacing:2px;margin-left:6px;font-size:11px}
+.topbar nav{display:flex;gap:14px;flex-wrap:wrap}
+.topbar nav a{color:#DCEAE4;text-decoration:none;font-size:14px;font-weight:600}
+.topbar nav a:hover,.topbar nav a[aria-current]{color:#F4D58A}
+.wrap{max-width:1000px;margin:0 auto;padding:26px 16px 56px}
+.crumbs{font-size:13px;color:var(--ink-soft);margin-bottom:14px}
+.crumbs a{color:var(--ink-soft)}
+.hero{color:#fff;border-radius:20px;padding:32px 24px;background:linear-gradient(160deg,var(--green-l) 0%,var(--green) 55%,var(--green-d) 100%);box-shadow:var(--shadow)}
+.hero h1{font-size:30px;line-height:1.2;font-weight:800;margin-bottom:10px}
+.hero h1 em{color:#F4D58A;font-style:normal}
+.hero p{color:#DCEAE4;font-size:16px;max-width:700px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.badge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#25D366;color:#fff;font-weight:800;font-size:16px;padding:13px 22px;border-radius:12px;text-decoration:none;margin-top:18px}
+.btn:hover{background:#1ebe5a}
+.btn.alt{background:#fff;color:var(--green);border:1px solid var(--line)}
+h2{font-size:23px;color:var(--green);margin:36px 0 14px;font-weight:800;line-height:1.25}
+h3{font-size:18px;color:var(--green);margin:18px 0 8px}
+p{margin-bottom:10px}
+ul,ol{padding-left:22px;margin-bottom:12px}
+li{margin-bottom:6px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow);margin-bottom:18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid.two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:820px){.grid,.grid.two{grid-template-columns:1fr}.hero h1{font-size:24px}}
+.prod{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.prod h3{margin:0 0 4px}
+.prod .fill{font-size:13.5px;color:var(--ink-soft);flex:1}
+.prod .price{font-size:24px;font-weight:800;color:var(--green);margin:10px 0 2px}
+.prod .price small{font-size:13px;color:var(--ink-soft);font-weight:600}
+.prod .btn{font-size:14px;padding:10px 14px;margin-top:10px}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;margin-bottom:14px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:14.5px;vertical-align:top}
+th{background:var(--cream2);color:var(--green);font-weight:700}
+.note{background:#EAF3EC;border:1px dashed var(--green-l);border-radius:12px;padding:12px 16px;font-size:14.5px;margin:14px 0}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+.faq summary{cursor:pointer;padding:13px 16px;font-weight:700;color:var(--green);list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";float:right;color:var(--gold);font-size:20px;line-height:1}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 16px 12px;color:var(--ink-soft);margin:0}
+.cta-box{margin-top:36px;text-align:center;background:linear-gradient(135deg,var(--red) 0%,var(--red-d) 100%);color:#fff;border-radius:18px;padding:28px 20px;box-shadow:var(--shadow)}
+.cta-box h2{color:#fff;margin:0 0 6px}
+.cta-box p{color:#fbe3df}
+.cta-box .btn{margin-top:12px}
+.related{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.related a{background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 14px;text-decoration:none;font-size:14px;font-weight:600;color:var(--green)}
+footer.site{background:#f8f5f0;border-top:1px solid var(--line);padding:32px 16px;text-align:center;font-size:14px;color:var(--ink)}
+footer.site nav{display:flex;gap:6px 18px;justify-content:center;flex-wrap:wrap;margin-bottom:14px}
+footer.site nav a{color:var(--ink);text-decoration:none;font-weight:500}
+footer.site .copy{font-size:13px;color:#888;margin-top:14px}
+.wa-float{position:fixed;right:16px;bottom:16px;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25);z-index:50;text-decoration:none}
+.wa-float svg{width:30px;height:30px;fill:#fff}
